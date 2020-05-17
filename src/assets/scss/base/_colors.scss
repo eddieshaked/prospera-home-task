@@ -1,0 +1,21 @@
+$colors: (
+  primary: #277ad3,
+  secondary: #6699ff,
+  background: #99ccff,
+  content: #fff,
+  green: #30d5a0,
+  white: #fff,
+  black: #000,
+  error: #ea4335,
+  disabled: #777777,
+  gold: #e4bb24
+);
+
+@function use-colors($key) {
+  $value: map-get($colors, $key);
+  @if ($value) {
+    @return $value;
+  } @else {
+    @error 'There is no such key'
+  }
+}

@@ -1,0 +1,6 @@
+%card-error {
+    align-items: center;
+    > i {
+      color: use-colors(error);
+    }
+}

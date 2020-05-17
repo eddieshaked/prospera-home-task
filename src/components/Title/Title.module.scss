@@ -1,0 +1,25 @@
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/spaces";
+
+.title {
+  a {
+    text-decoration: none;
+    color: use-colors(content);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:before {
+      content: '>';
+      font-weight: 700;
+      color: use-colors(green);
+      padding-right: use-space(base);
+    }
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

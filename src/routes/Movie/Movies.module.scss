@@ -1,0 +1,11 @@
+@import '../../assets/scss/base/spaces';
+@import '../../assets/scss/base/colors';
+
+.movies {
+  padding: use-space(x-large);
+}
+
+.loader {
+  margin: auto;
+  padding: use-space(x-large);
+}

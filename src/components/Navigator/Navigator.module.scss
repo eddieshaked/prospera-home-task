@@ -1,0 +1,34 @@
+@import '../../assets/scss/base/spaces';
+@import '../../assets/scss/base/colors';
+
+.navigator {
+  font-size: 20px;
+  display: flex;
+
+  li {
+    margin-left: use-space(base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.selected {
+      a {
+        color: use-colors(green);
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      transition: background-color 300ms;
+      color: use-colors(content);
+      text-decoration: none;
+      padding: use-space(base);
+      display: block;
+      border-radius: 4px;
+
+      &:hover {
+        background: rgba(use-colors(background), .4);
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../../assets/scss/base/spaces';
+@import '../../../../assets/scss/base/colors';
+
+
+.card {
+  margin-top: use-space(x-large);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: use-space(large);
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+}
+
+.tempContainer {
+
+  table {
+    background-color: rgba(use-colors(primary), .5);
+    border-radius: 4px;
+    width: 60%;
+
+    tr {
+      td {
+        padding: use-space(base);
+
+        &:first-child {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  padding-bottom: use-space(base);
+
+  p {
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 60px;
+  }
+}

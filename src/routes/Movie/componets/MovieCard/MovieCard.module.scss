@@ -1,0 +1,81 @@
+@import '../../../../assets/scss/base/spaces';
+@import '../../../../assets/scss/base/colors';
+@import '../../../../assets/scss/utils/placeholders';
+
+
+.card {
+  display: flex;
+  margin-top: use-space(x-large);
+
+  img {
+    max-width: 200px;
+    width: 30%;
+    padding-right: use-space(base);
+  }
+
+  &.error {
+    @extend %card-error;
+  }
+
+  > i {
+    padding-right: use-space(small);
+  }
+}
+
+.movieContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.movieInfo {
+  flex: 1;
+
+  ul {
+    padding-top: use-space(base);
+
+    li {
+      padding-top: use-space(large);
+
+      a {
+        color: use-colors(green);
+      }
+    }
+  }
+}
+
+
+.movieHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: use-space(base);
+  }
+
+  > p {
+    font-size: 14px;
+    color: use-colors(disabled);
+  }
+}
+
+.movieFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .rating {
+    > i {
+      color: use-colors(gold);
+    }
+  }
+}
+

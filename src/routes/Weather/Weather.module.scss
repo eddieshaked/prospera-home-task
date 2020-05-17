@@ -1,0 +1,27 @@
+@import '../../assets/scss/base/spaces';
+@import '../../assets/scss/base/colors';
+@import '../../assets/scss/utils/placeholders';
+
+
+.weather {
+  padding: use-space(x-large);
+
+  .loader {
+    margin: auto;
+    padding: use-space(x-large);
+  }
+}
+
+.searchContainer {
+  display: flex;
+
+  .searchInput {
+    margin-right: use-space(large);
+    flex: 1;
+  }
+}
+
+.error {
+  @extend %card-error;
+  display: flex;
+}

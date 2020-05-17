@@ -1,0 +1,11 @@
+@import '../../assets/scss/base/spaces';
+@import '../../assets/scss/base/colors';
+
+.home {
+  padding: use-space(x-large);
+
+  > p {
+    text-align: center;
+    font-size: 20px;
+  }
+}

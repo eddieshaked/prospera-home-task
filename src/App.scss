@@ -1,0 +1,19 @@
+@import 'assets/scss/index';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,400,300,700');
+
+html {
+  font-family: sans-serif, 'Roboto';
+  color: use-colors(content);
+}
+
+body {
+  background: linear-gradient(to right, rgba(use-colors(primary),1) 0%,rgba(use-colors(secondary),1) 100%);
+}
+
+ .App {
+   > main {
+     max-width: 800px;
+     margin: auto;
+     padding-top: 58px;
+   }
+ }
